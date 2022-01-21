@@ -143,8 +143,8 @@ export default function BlogDetails() {
             </button>
           </div>
         </div>
-        <div className="flex-1 flex flex-col gap-y-7">
-          <form action="" className="block lg:max-w-xs">
+        <div className="flex items-end flex-col gap-y-7">
+          <form action="" className="block w-full">
             <div className="flex flex-nowrap border border-inp w-full">
               <input
                 type="search"
@@ -159,7 +159,7 @@ export default function BlogDetails() {
               />
             </div>
           </form>
-          <div className="bg-aqua px-5 py-4 flex flex-col gap-y-10 text-white lg:max-w-xs">
+          <div className="bg-aqua px-5 py-4 flex flex-col gap-y-10 text-white w-full">
             <h4 className="text-center text-white capitalize font-bold text-2xl">
               Recent Blog Post
             </h4>
@@ -182,7 +182,7 @@ export default function BlogDetails() {
               </h4>
             </div>
           </div>
-          <div className="bg-procelain shadow-sm px-5 py-7 lg:max-w-xs">
+          <div className="bg-procelain shadow-sm px-5 py-7 w-full">
             <div className="text-center">
               <h3 className="text-aqua text-2xl font-bold mb-3">
                 Get Your Full Cash Offer
