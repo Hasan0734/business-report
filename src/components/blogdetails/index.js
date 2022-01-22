@@ -1,9 +1,10 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { useForm } from 'react-hook-form';
 import { MdOutlineArrowForwardIos } from 'react-icons/md';
 import img from '/public/Can-I-Sell-my-Salem-Home-without-Any-Equity_-OG-2-400x250.jpg';
 
-export default function BlogDetails() {
+export default function BlogDetails({ show, setShow }) {
   const { register, handleSubmit } = useForm();
   const onSubmit = (data) => console.log(data);
 
@@ -141,6 +142,7 @@ export default function BlogDetails() {
           </div>
           <div className="text-center">
             <button
+              onClick={() => setShow(!show)}
               type="submit"
               className="bg-aqua px-7 py-4 text-white uppercase font-medium font-asap text-xl rounded-full"
             >
@@ -169,22 +171,46 @@ export default function BlogDetails() {
               Recent Blog Post
             </h4>
             <div className="flex font-amiko font-medium items-center gap-x-4">
-              <Image src={img.src} alt="" width={90} height={50} />
-              <h4 className="text-white font-medium">
-                Can I Sell my Salem Home without Any Equity?
-              </h4>
+              <Link href="/single" passHref>
+                <a>
+                  <Image src={img.src} alt="" width={90} height={50} />
+                </a>
+              </Link>
+              <Link href="/single" passHref>
+                <a>
+                  <h4 className="text-white font-medium">
+                    Can I Sell my Salem Home without Any Equity?
+                  </h4>
+                </a>
+              </Link>
             </div>
             <div className="flex font-amiko font-medium items-center gap-x-4">
-              <Image src={img.src} alt="" width={90} height={50} />
-              <h4 className="text-white font-medium">
-                Can I Sell my Salem Home without Any Equity?
-              </h4>
+              <Link href="/single" passHref>
+                <a>
+                  <Image src={img.src} alt="" width={90} height={50} />
+                </a>
+              </Link>
+              <Link href="/single" passHref>
+                <a>
+                  <h4 className="text-white font-medium">
+                    Can I Sell my Salem Home without Any Equity?
+                  </h4>
+                </a>
+              </Link>
             </div>
             <div className="flex font-amiko font-medium items-center gap-x-4">
-              <Image src={img.src} alt="" width={90} height={50} />
-              <h4 className="text-white font-medium">
-                Can I Sell my Salem Home without Any Equity?
-              </h4>
+              <Link href="/single" passHref>
+                <a>
+                  <Image src={img.src} alt="" width={90} height={50} />
+                </a>
+              </Link>
+              <Link href="/single" passHref>
+                <a>
+                  <h4 className="text-white font-medium">
+                    Can I Sell my Salem Home without Any Equity?
+                  </h4>
+                </a>
+              </Link>
             </div>
           </div>
           <div className="bg-procelain shadow-sm px-5 py-7 w-full">
