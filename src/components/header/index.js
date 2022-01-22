@@ -32,9 +32,9 @@ export default function Header() {
         } fixed z-50 px-8 w-full flex items-center transition-all font-asap`}
       >
         <div className="flex w-full justify-between">
-          <div className="cursor-pointer w-24 lg:w-52">
+          <div className="cursor-pointer w-24 md:w-52">
             <Link href="/">
-              <a className="w-24">
+              <a>
                 <Image
                   src={logo}
                   className={`w-auto ${fixed ? '' : 'invert-1 brightness-0'} `}
@@ -94,7 +94,7 @@ export default function Header() {
             </ul>
           </nav>
           <div
-            className={`flex-1 pt-3 lg:pt-10 flex justify-end ${
+            className={`flex-1 pt-3 md:pt-10 flex justify-end ${
               fixed ? 'text-black' : 'text-aqua'
             } cursor-pointer text-2xl xl:hidden`}
             onClick={() => setToggle(!toggle)}

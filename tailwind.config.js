@@ -9,8 +9,11 @@ module.exports = {
       fontSize: {
         'base-2': ['18px', '18px'],
         '2xl': ['25px', '30px'],
+        '4xl': ['35px', '42px'],
+        '5xl': ['44px', '44px'],
       },
       screens: {
+        md: '860px',
         lg: '1170px',
         xl: '1280px',
         '2xl': '1280px',

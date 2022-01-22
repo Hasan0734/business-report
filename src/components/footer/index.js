@@ -12,7 +12,7 @@ const year = new Date().getFullYear();
 export default function Footer() {
   return (
     <footer className="bg-mirage text-white pt-16">
-      <div className="container px-4 flex flex-col gap-y-6 lg:gap-y-0 lg:flex-row lg:gap-x-8">
+      <div className="container px-4 flex flex-col gap-y-6 md:gap-y-0 md:flex-row md:gap-x-8">
         <div className="flex-1">
           <div className="">
             <Link href="/">
@@ -27,37 +27,37 @@ export default function Footer() {
               </a>
             </Link>
           </div>
-          <ul className="flex gap-x-1 flex-nowrap mt-3">
-            <li className="bg-aqua text-white w-11 h-11 cursor-pointer rounded-md text-xl flex items-center justify-center">
-              <Link href="/">
+          <ul className="flex gap-x-1 justify-center flex-nowrap mt-3">
+            <li className="bg-aqua text-white w-8 h-8 cursor-pointer rounded-sm text-xl flex items-center justify-center">
+              <Link href="https://www.facebook.com/qhrei">
                 <a>
                   <FaFacebookF />
                 </a>
               </Link>
             </li>
-            <li className="bg-aqua text-white w-11 h-11 cursor-pointer rounded-md text-xl flex items-center justify-center">
-              <Link href="/">
+            <li className="bg-aqua text-white w-8 h-8 cursor-pointer rounded-sm text-xl flex items-center justify-center">
+              <Link href="https://twitter.com/ReimaginedLlc">
                 <a>
                   <BsTwitter />
                 </a>
               </Link>
             </li>
-            <li className="bg-aqua text-white w-11 h-11 cursor-pointer rounded-md text-xl flex items-center justify-center">
-              <Link href="/">
+            <li className="bg-aqua text-white w-8 h-8 cursor-pointer rounded-sm text-xl flex items-center justify-center">
+              <Link href="https://www.youtube.com/channel/UCpMjg_eXB8oGYCuLfGUlX6g">
                 <a>
                   <BsYoutube />
                 </a>
               </Link>
             </li>
-            <li className="bg-aqua text-white w-11 h-11 cursor-pointer rounded-md text-xl flex items-center justify-center">
-              <Link href="/">
+            <li className="bg-aqua text-white w-8 h-8 cursor-pointer rounded-sm text-xl flex items-center justify-center">
+              <Link href="https://www.linkedin.com/company/qhrei">
                 <a>
                   <FaLinkedinIn />
                 </a>
               </Link>
             </li>
-            <li className="bg-aqua text-white w-11 h-11 cursor-pointer rounded-md text-xl flex items-center justify-center">
-              <Link href="/">
+            <li className="bg-aqua text-white w-8 h-8 cursor-pointer rounded-sm text-xl flex items-center justify-center">
+              <Link href="https://www.instagram.com/qualityhomesreimagined/">
                 <a>
                   <BsInstagram />
                 </a>
@@ -69,7 +69,7 @@ export default function Footer() {
           <h3 className="font-bold font-asap uppercase text-lg border-b border-b-iron-gray pb-4">
             our company
           </h3>
-          <ul className="mt-5 font-asap font-medium">
+          <ul className="mt-5 font-asap font-medium pl-3.5">
             <li>
               <Link href="">
                 <a className="transition-all hover:text-aqua">About Us</a>
@@ -101,7 +101,7 @@ export default function Footer() {
           <h3 className="font-bold font-asap uppercase text-lg border-b border-b-iron-gray pb-4">
             services
           </h3>
-          <ul className="mt-5 capitalize font-medium font-asap">
+          <ul className="mt-5 capitalize font-medium font-asap pl-3.5">
             <li>
               <Link href="">
                 <a className="transition-all hover:text-aqua">Locations</a>
@@ -170,11 +170,22 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="container px-4 border-t font-asap font-medium py-5 border-t-white border-b border-b-iron-gray mt-8">
-        <p>
-          Copyright &copy;{year} Quality Homes Reimagined, LLC. All rights
-          reserved. Powered by Top Results Consulting
-        </p>
+      <div className="container flex flex-col md:flex-row px-4 border-t font-asap font-medium py-5 border-t-white border-b border-b-iron-gray mt-8">
+        <div className="flex-1">
+          <p>
+            Copyright &copy;{year} Quality Homes Reimagined, LLC. All rights
+            reserved. Powered by Top Results Consulting
+          </p>
+        </div>
+        <div className="font-asap font-semibold">
+          <Link href="/privacy">
+            <a>Privacy Policy</a>
+          </Link>
+          <span className="px-1">|</span>
+          <Link href="/privacy">
+            <a>Privacy Policy</a>
+          </Link>
+        </div>
       </div>
     </footer>
   );

@@ -1,15 +1,20 @@
+import Image from 'next/image';
 import bg from '/public/Oregon-We-Buy-Houses-Fast-For-Cash.jpg';
 
 export default function ReadyToSell({ show, setShow }) {
   return (
     <section>
-      <div className="flex flex-col lg:flex-row">
+      <div className="flex flex-col md:flex-row">
         <div
           className="flex-1"
           style={{ background: `url(${bg.src}) center/cover no-repeat` }}
-        />
-        <div className="bg-mirage flex-1 px-4 py-16 lg:py-28 text-white font-asap leading-7 font-medium flex flex-col items-start gap-y-6 lg:px-16">
-          <h2 className="text-aqua font-bold text-2xl font-amiko lg:text-4xl">
+        >
+          <div className="md:hidden">
+            <Image src={bg} alt="" />
+          </div>
+        </div>
+        <div className="bg-mirage flex-1 px-4 md:px-22 py-16 md:py-28 text-white font-asap leading-7 font-medium flex flex-col items-start gap-y-6 lg:px-16">
+          <h2 className="text-aqua font-bold text-2xl font-amiko md:text-4xl">
             I’m Ready To Sell My House Fast For Cash!
           </h2>
           <p>
@@ -45,7 +50,7 @@ export default function ReadyToSell({ show, setShow }) {
           <button
             onClick={() => setShow(!show)}
             type="button"
-            className="bg-aqua text-white font-medium text-lg font-asap uppercase px-6 py-5 rounded-full"
+            className="bg-aqua mt-10 text-white font-medium text-lg font-asap uppercase px-6 py-5 rounded-full"
           >
             get your fair cash offer
           </button>

@@ -28,7 +28,7 @@ const features = [
 
 export default function Feature({ show, setShow }) {
   return (
-    <section className="py-10 lg:py-28">
+    <section className="py-10 md:py-28">
       <div className="container px-4">
         {/* section title */}
         <div className="text-center flex flex-col gap-y-5">
@@ -42,10 +42,10 @@ export default function Feature({ show, setShow }) {
           </p>
         </div>
         {/* all features */}
-        <div className="grid grid-cols-1 gap-y-10 mt-16 md:grid-cols-2 md:gap-x-9 lg:grid-cols-3 xl:grid-cols-4">
+        <div className="grid grid-cols-1 gap-y-10 mt-16 md:grid-cols-4">
           {features &&
             features.map((feature, i) => (
-              <div className="flex-1  p-5 py-8 text-center" key={i}>
+              <div className="flex-1  p-1 py-8 text-center" key={i}>
                 <div className="w-22 h-22 mx-auto rounded-full bg-aqua flex items-center justify-center text-white text-5xl">
                   {feature.icon}
                 </div>

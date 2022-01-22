@@ -24,7 +24,7 @@ const lists = [
 export default function Trusted() {
   return (
     <section className="py-16">
-      <div className="container px-4 flex flex-col lg:flex-row gap-x-16 gap-y-6">
+      <div className="container px-4 flex flex-col md:flex-row gap-x-16 gap-y-6">
         <div className="flex-1">
           <Image
             src={trustbg}
@@ -35,7 +35,7 @@ export default function Trusted() {
           />
         </div>
         <div className="flex-1 flex flex-col gap-y-3 lg:gap-y-5">
-          <h2 className="text-aqua font-bold text-2xl lg:text-3xl font-amiko">
+          <h2 className="text-aqua font-bold text-2xl md:text-3xl font-amiko">
             Choose Trusted Cash Home Buyers
           </h2>
           <p className="text-iron-gray font-medium font-asap leading-7">

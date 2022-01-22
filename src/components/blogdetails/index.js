@@ -8,7 +8,7 @@ export default function BlogDetails() {
   const onSubmit = (data) => console.log(data);
 
   return (
-    <section className="py-16 bg-white-smoke">
+    <section className="py-20 bg-white-smoke">
       <div className="container px-4 flex flex-col lg:flex-row gap-x-16 gap-y-10 lg:gap-y-0">
         <div className="flex-1 shadow-sm p-12 flex flex-col gap-y-7">
           <div className="flex flex-col gap-y-5 font-asap leading-7">

@@ -3,7 +3,7 @@ import banner from '/public/banner.jpg';
 export default function BlogBanner() {
   return (
     <section
-      className="w-full py-40 flex items-center relative"
+      className="w-full py-22 flex items-center relative"
       style={{
         background: `linear-gradient(180deg,rgba(38,38,38,0.92) 0%,rgba(38,38,38,0.84) 100%), url(${banner.src}) center/cover no-repeat`,
       }}
@@ -13,7 +13,7 @@ export default function BlogBanner() {
           <h4 className="text-aqua font-asap text-lg font-bold uppercase">
             QUALITY HOMES REIMAGINED, LLC
           </h4>
-          <h2 className="text-white font-amiko font-bold text-4xl lg:text-6xl">
+          <h2 className="text-white font-amiko font-bold text-4xl md:text-6xl">
             Blog
           </h2>
         </div>

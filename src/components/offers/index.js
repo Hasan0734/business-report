@@ -7,10 +7,10 @@ export default function Offers() {
   const onSubmit = (data) => console.log(data);
 
   return (
-    <section className="py-16">
-      <div className="container flex flex-col gap-y-12 lg:gap-y-0 lg:flex-row px-4 lg:gap-x-9">
-        <div className="flex-1 flex flex-col gap-y-5 lg:w-4/6">
-          <h className="text-aqua font-bold text-2xl lg:text-4xl font-amiko">
+    <section className="py-16 md:py-24">
+      <div className="container flex flex-col gap-y-12 md:gap-y-0 md:flex-row px-4 md:gap-x-5">
+        <div className="flex-1 flex flex-col gap-y-5 md:w-4/6">
+          <h className="text-aqua font-bold text-2xl md:text-4xl font-amiko">
             We Want to Offer You Cash for Your House Today!
           </h>
           <p className="font-medium text-iron-gray font-asap">
@@ -35,8 +35,8 @@ export default function Offers() {
             your home.
           </p>
         </div>
-        <div className="lg:w-2/6">
-          <div className="max-w-md mx-auto md:mx-0 bg-procelain shadow-sm px-5 py-7">
+        <div className="md:w-2/6">
+          <div className="md:w-96 bg-procelain shadow-sm px-5 py-7">
             <div className="text-center">
               <h3 className="text-aqua text-2xl font-bold mb-3 font-amiko">
                 Get Your Full Cash Offer
@@ -80,9 +80,9 @@ export default function Offers() {
           </div>
         </div>
       </div>
-      <div className="container flex flex-col gap-y-12 lg:gap-y-0 lg:flex-row px-4 lg:gap-x-9 mt-20">
-        <div className="flex-1 flex flex-col gap-y-5 lg:w-4/6">
-          <h className="text-aqua font-bold text-2xl lg:text-4xl font-amiko">
+      <div className="container flex flex-col gap-y-12 md:gap-y-0 md:flex-row px-4 md:gap-x-5 mt-20">
+        <div className="flex-1 flex flex-col gap-y-5 md:w-4/6">
+          <h className="text-aqua font-bold text-2xl md:text-4xl font-amiko">
             We Buy Homes on your terms Without Commissions or Fees
           </h>
           <p className="font-medium text-iron-gray font-asap leading-7">
@@ -136,8 +136,8 @@ export default function Offers() {
             .
           </p>
         </div>
-        <div className="flex flex-col gap-y-7 lg:w-2/6">
-          <div className="bg-aqua px-8 py-10 lg:w-80">
+        <div className="flex md:w-2/6 flex-col gap-y-7">
+          <div className="bg-aqua px-8 py-10 md:w-96">
             <h3 className="text-white uppercase font-bold font-sans text-lg mb-3">
               LIST WITH A REALTOR OR SELL TO A CASH BUYER?
             </h3>
@@ -153,7 +153,7 @@ export default function Offers() {
               see the diffrence
             </button>
           </div>
-          <div className="bg-aqua px-8 py-10 lg:w-80">
+          <div className="bg-aqua px-8 py-10 lg:w-96">
             <h3 className="text-white uppercase font-bold font-amiko text-lg mb-3">
               FREQUENTLY ASKED QUESTIONS
             </h3>

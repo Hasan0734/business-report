@@ -5,9 +5,9 @@ import sale from '/public/sale.jpg';
 export default function Offer({ show, setShow }) {
   return (
     <section className="py-24">
-      <div className="container flex flex-col-reverse lg:flex-row gap-y-5 lg:gap-y-0 px-4 gap-x-5">
+      <div className="container flex flex-col-reverse md:flex-row gap-y-5 lg:gap-y-0 px-4 gap-x-5">
         <div className="flex-1 flex flex-col gap-y-4 items-start">
-          <h2 className="text-aqua text-2xl lg:text-4xl font-bold font-amiko">
+          <h2 className="text-aqua text-2xl md:text-4xl font-bold font-amiko">
             Need To Sell Your House Fast For Cash?
           </h2>
           <p className="text-iron-gray font-medium font-asap leading-7">

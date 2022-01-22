@@ -9,7 +9,7 @@ export default function Modal({ show, setShow }) {
 
   return (
     <div
-      className={`bg-white bg-opacity-70 transition-all flex items-center justify-center fixed h-full w-full z-50 top-0 bottom-0 ${
+      className={`bg-black bg-opacity-70 transition-transform flex items-center justify-center fixed h-full w-full z-50 top-0 bottom-0 ${
         show ? '' : 'scale-0'
       } left-0 right-0`}
     >
