@@ -5,7 +5,21 @@ module.exports = {
     './src/components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontSize: {
+        'base-2': ['18px', '18px'],
+        '2xl': ['25px', '30px'],
+      },
+      screens: {
+        lg: '1170px',
+        xl: '1280px',
+        '2xl': '1280px',
+      },
+      spacing: {
+        800: '800px',
+        22: '90px',
+      },
+    },
     container: {
       center: true,
     },
@@ -16,6 +30,7 @@ module.exports = {
     //   xl: '1280px',
     // },
     colors: {
+      transparent: 'transparent',
       white: '#fff',
       black: '#000',
       procelain: '#f2f2f2',
@@ -33,11 +48,15 @@ module.exports = {
       gray: '#bbb',
       'gray-light': '#888888',
       iron: '#d8d8d8',
+      cross: 'rgba( 49, 91, 124, 1.00 )',
     },
     fontFamily: {
       amiko: ['Amiko', 'sans-serif'],
       asap: ['Asap', 'sans-serif'],
+      sans: ['Open sans', 'sans-serif'],
+      roboto: ['Roboto', 'sans-serif'],
     },
+
     boxShadow: {
       sm: '0px 2px 18px 0px rgb(0 0 0 / 30%)',
       xm: '0px 2px 18px 0px rgb(0 0 0 / 8%)',

@@ -10,10 +10,12 @@ export default function BlogBanner() {
     >
       <div className="flex container flex-col md:mt-16">
         <div className="flex-1 flex flex-col text-center gap-y-1">
-          <h4 className="text-aqua text-lg font-bold uppercase">
+          <h4 className="text-aqua font-asap text-lg font-bold uppercase">
             QUALITY HOMES REIMAGINED, LLC
           </h4>
-          <h2 className="text-white font-bold text-4xl lg:text-6xl">Blog</h2>
+          <h2 className="text-white font-amiko font-bold text-4xl lg:text-6xl">
+            Blog
+          </h2>
         </div>
       </div>
     </section>

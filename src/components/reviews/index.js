@@ -11,26 +11,21 @@ const settings = {
   arrows: false,
   responsive: [
     {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        infinite: true,
-        dots: false,
-      },
-    },
-    {
-      breakpoint: 600,
+      breakpoint: 1280,
       settings: {
         slidesToShow: 2,
-        slidesToScroll: 2,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true,
       },
     },
     {
-      breakpoint: 480,
+      breakpoint: 768,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
+        infinite: true,
+        dots: true,
       },
     },
   ],
@@ -46,10 +41,10 @@ export default function ClientReview() {
     >
       <div className="container px-4">
         <div className="text-center">
-          <h2 className="text-white capitalize font-bold text-4xl mb-5">
+          <h2 className="text-white capitalize font-bold text-4xl mb-8 font-amiko">
             Client Review
           </h2>
-          <p className="text-white font-medium">
+          <p className="text-white font-medium font-roboto">
             At Quality Homes Reimagined, LLC we do our best to provide excellent
             service every time, which is why we are proud to share our client
             reviews!
@@ -58,7 +53,7 @@ export default function ClientReview() {
         <Slider {...settings} className="mt-20">
           <div>
             <div className="text-center p-4 text-white flex flex-col gap-y-5">
-              <p className="text-white font-medium">
+              <p className="text-white font-medium font-roboto">
                 Quality Homes Reimagined LLC are great people to work with. They
                 have an impressive team with great knowledge of their industry.
                 They also have a very impressive network behind them that I have
@@ -75,7 +70,7 @@ export default function ClientReview() {
                 <AiFillStar />
               </div>
               <div className="text-center">
-                <p className="font-bold">Jhon Doe</p>
+                <p className="font-bold font-roboto">Jhon Doe</p>
               </div>
             </div>
           </div>

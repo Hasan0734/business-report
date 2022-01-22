@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import { useState } from 'react';
 import {
   Additional,
   Banner,
@@ -14,8 +15,11 @@ import {
   Trusted,
 } from '../src/components';
 import Layout from '../src/components/layout';
+import Modal from '../src/components/modal';
 
 export default function Home() {
+  const [show, setShow] = useState(false);
+
   return (
     <>
       <Head>
@@ -24,18 +28,19 @@ export default function Home() {
         <link rel="icon" href="/favicon.png" />
       </Head>
       <Layout>
+        <Modal show={show} setShow={setShow} />
         <Banner />
-        <Offer />
+        <Offer show={show} setShow={setShow} />
         <Trusted />
-        <Steps />
-        <Feature />
+        <Steps show={show} setShow={setShow} />
+        <Feature show={show} setShow={setShow} />
         <ClientReview />
         <Offers />
         <Houses />
         <Additional />
-        <ReadyToSell />
+        <ReadyToSell show={show} setShow={setShow} />
         <News />
-        <Subcription />
+        <Subcription show={show} setShow={setShow} />
       </Layout>
     </>
   );

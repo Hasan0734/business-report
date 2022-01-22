@@ -66,79 +66,79 @@ export default function Footer() {
           </ul>
         </div>
         <div className="flex-1">
-          <h3 className="font-bold uppercase text-lg border-b border-b-iron-gray pb-4">
+          <h3 className="font-bold font-asap uppercase text-lg border-b border-b-iron-gray pb-4">
             our company
           </h3>
-          <ul className="mt-5">
+          <ul className="mt-5 font-asap font-medium">
             <li>
               <Link href="">
-                <a>About Us</a>
+                <a className="transition-all hover:text-aqua">About Us</a>
               </Link>
             </li>
             <li>
               <Link href="">
-                <a>How it works</a>
+                <a className="transition-all hover:text-aqua">How it works</a>
               </Link>
             </li>
             <li>
               <Link href="">
-                <a>Reviews</a>
+                <a className="transition-all hover:text-aqua">Reviews</a>
               </Link>
             </li>
             <li>
               <Link href="">
-                <a>Services</a>
+                <a className="transition-all hover:text-aqua">Services</a>
               </Link>
             </li>
             <li>
               <Link href="">
-                <a>Contact Us</a>
+                <a className="transition-all hover:text-aqua">Contact Us</a>
               </Link>
             </li>
           </ul>
         </div>
         <div className="flex-1">
-          <h3 className="font-bold uppercase text-lg border-b border-b-iron-gray pb-4">
+          <h3 className="font-bold font-asap uppercase text-lg border-b border-b-iron-gray pb-4">
             services
           </h3>
-          <ul className="mt-5 capitalize">
+          <ul className="mt-5 capitalize font-medium font-asap">
             <li>
               <Link href="">
-                <a>Locations</a>
+                <a className="transition-all hover:text-aqua">Locations</a>
               </Link>
             </li>
             <li>
               <Link href="">
-                <a>Blog</a>
+                <a className="transition-all hover:text-aqua">Blog</a>
               </Link>
             </li>
             <li>
               <Link href="">
-                <a>Agents</a>
+                <a className="transition-all hover:text-aqua">Agents</a>
               </Link>
             </li>
             <li>
               <Link href="">
-                <a>Investors</a>
+                <a className="transition-all hover:text-aqua">Investors</a>
               </Link>
             </li>
             <li>
               <Link href="">
-                <a>contractors</a>
+                <a className="transition-all hover:text-aqua">contractors</a>
               </Link>
             </li>
             <li>
               <Link href="">
-                <a>FAQs</a>
+                <a className="transition-all hover:text-aqua">FAQs</a>
               </Link>
             </li>
           </ul>
         </div>
         <div className="flex-1">
-          <h3 className="font-bold uppercase text-lg border-b border-b-iron-gray pb-4">
+          <h3 className="font-bold font-asap uppercase text-lg border-b border-b-iron-gray pb-4">
             contact us
           </h3>
-          <div className="mt-5 flex flex-col gap-y-3">
+          <div className="mt-5 flex flex-col gap-y-3 font-sans">
             <div className=" flex gap-x-3">
               <div className="w-12 h-12 rounded-full  bg-aqua text-white flex items-center justify-center text-xl">
                 <HiLocationMarker />
@@ -170,7 +170,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="container px-4 border-t py-5 border-t-white border-b border-b-iron-gray mt-8">
+      <div className="container px-4 border-t font-asap font-medium py-5 border-t-white border-b border-b-iron-gray mt-8">
         <p>
           Copyright &copy;{year} Quality Homes Reimagined, LLC. All rights
           reserved. Powered by Top Results Consulting

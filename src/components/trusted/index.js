@@ -35,15 +35,15 @@ export default function Trusted() {
           />
         </div>
         <div className="flex-1 flex flex-col gap-y-3 lg:gap-y-5">
-          <h2 className="text-aqua font-bold text-2xl lg:text-3xl">
+          <h2 className="text-aqua font-bold text-2xl lg:text-3xl font-amiko">
             Choose Trusted Cash Home Buyers
           </h2>
-          <p className="text-iron-gray font-medium">
+          <p className="text-iron-gray font-medium font-asap leading-7">
             Don&apos;t simply choose someone who&apos;ll offer you cash for your
             house. Partner with a trusted company, like us, and you&apos;ll get
             the most out of the deal.
           </p>
-          <p className="text-aqua font-medium">
+          <p className="text-aqua font-medium font-amiko">
             Quality Homes Reimagined, LLC takes pride in being:
           </p>
           <ul className="flex flex-col gap-y-4">
@@ -52,10 +52,12 @@ export default function Trusted() {
                 <li className="flex gap-x-4 text-aqua" key={i}>
                   <TiTick className="text-5xl" />
                   <p>
-                    <strong className="text-iron-gray whitespace-nowrap">
+                    <strong className="text-iron-gray whitespace-nowrap font-sans font-bold">
                       {list.title}
                     </strong>
-                    <span className="text-iron-gray">{list.desc}</span>
+                    <span className="text-iron-gray font-medium font-sans">
+                      {list.desc}
+                    </span>
                   </p>
                 </li>
               ))}

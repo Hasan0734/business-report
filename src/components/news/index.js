@@ -1,17 +1,17 @@
 import Image from 'next/image';
 import img2 from '/public/Home-Selling-Mistakes-You-Should-Avoid-OG-400x250.jpg';
 
-export default function News() {
+export default function News({ show, setShow }) {
   return (
-    <section className="py-16">
+    <section className="py-16 lg:py-28">
       <div className="container px-4">
         <div className="text-center">
-          <h2 className="text-aqua font-bold text-2xl lg:text-4xl capitalize mb-8">
+          <h2 className="text-aqua font-bold text-2xl lg:text-4xl font-amiko capitalize mb-8">
             latest news & blogs
           </h2>
         </div>
         <div className="flex flex-col lg:flex-row gap-y-6 lg:gap-y-0 lg:gap-x-7">
-          <div className="flex-1 flex flex-col gap-y-2 shadow-xm border border-iron">
+          <div className="flex-1 flex flex-col gap-y-2 shadow-xm border font-sans border-iron">
             <div>
               <Image
                 src={img2}
@@ -37,7 +37,7 @@ export default function News() {
               </button>
             </div>
           </div>
-          <div className="flex-1 flex flex-col gap-y-2 shadow-xm border border-iron">
+          <div className="flex-1 flex flex-col gap-y-2 shadow-xm border font-sans border-iron">
             <div>
               <Image
                 src={img2}
@@ -63,7 +63,7 @@ export default function News() {
               </button>
             </div>
           </div>
-          <div className="flex-1 flex flex-col gap-y-2 shadow-xm border border-iron">
+          <div className="flex-1 flex flex-col gap-y-2 shadow-xm border font-sans border-iron">
             <div>
               <Image
                 src={img2}
@@ -93,7 +93,7 @@ export default function News() {
         <div className="text-center mt-14">
           <button
             type="submit"
-            className="bg-aqua px-7 py-4 text-white uppercase font-bold rounded-full"
+            className="bg-aqua px-7 py-4 font-asap text-xl text-white uppercase font-medium rounded-full"
           >
             Read More Blogs
           </button>

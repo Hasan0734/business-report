@@ -10,10 +10,10 @@ export default function SingleBlogBanner() {
     >
       <div className="flex container flex-col md:mt-16 h-80">
         <div className="flex-1 flex flex-col gap-y-5 text-white ">
-          <h2 className="text-white font-bold text-3xl lg:text-5xl">
+          <h2 className="text-white font-amiko font-bold text-3xl lg:text-5xl">
             Selling A House With Major Repairs? What to Remember
           </h2>
-          <p className="font-medium">by Steven Allen | Jan 5, 2022</p>
+          <p className="font-medium font-asap">by Steven Allen | Jan 5, 2022</p>
         </div>
       </div>
     </section>

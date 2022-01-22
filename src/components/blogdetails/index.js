@@ -1,12 +1,17 @@
 import Image from 'next/image';
+import { useForm } from 'react-hook-form';
+import { MdOutlineArrowForwardIos } from 'react-icons/md';
 import img from '/public/Can-I-Sell-my-Salem-Home-without-Any-Equity_-OG-2-400x250.jpg';
 
 export default function BlogDetails() {
+  const { register, handleSubmit } = useForm();
+  const onSubmit = (data) => console.log(data);
+
   return (
     <section className="py-16 bg-white-smoke">
       <div className="container px-4 flex flex-col lg:flex-row gap-x-16 gap-y-10 lg:gap-y-0">
         <div className="flex-1 shadow-sm p-12 flex flex-col gap-y-7">
-          <div className="flex flex-col gap-y-5">
+          <div className="flex flex-col gap-y-5 font-asap leading-7">
             <p className="font-medium text-iron-gray">
               Contrary to popular belief, there are ways to sell your house fast
               even with extensive repairs in Salem, Oregon. Although you’ll
@@ -21,8 +26,8 @@ export default function BlogDetails() {
               Here’s what to remember while selling a house with major repairs:
             </p>
           </div>
-          <div className="flex flex-col gap-y-5">
-            <h3 className="text-dune font-medium text-3xl">
+          <div className="flex flex-col font-asap leading-7 gap-y-5">
+            <h3 className="text-dune font-amiko font-medium text-3xl">
               Contact clients who are interested in fixer-uppers
             </h3>
             <p className="font-medium text-iron-gray">
@@ -42,8 +47,8 @@ export default function BlogDetails() {
               for a quick sale.
             </p>
           </div>
-          <div className="flex flex-col gap-y-5">
-            <h3 className="text-dune font-medium text-3xl">
+          <div className="flex flex-col font-asap leading-7 gap-y-5">
+            <h3 className="text-dune font-medium font-amiko text-3xl">
               Intend to disclose everything about the property before you sell
             </h3>
             <p className="font-medium text-iron-gray">
@@ -62,8 +67,8 @@ export default function BlogDetails() {
               need to disclose all of their issues to potential buyers.
             </p>
           </div>
-          <div className="flex flex-col gap-y-5">
-            <h3 className="text-dune font-medium text-3xl">
+          <div className="flex flex-col font-asap leading-7 gap-y-5">
+            <h3 className="text-dune font-amiko font-medium text-3xl">
               Hire an excellent real estate agent
             </h3>
             <p className="font-medium text-iron-gray">
@@ -81,8 +86,8 @@ export default function BlogDetails() {
               completed.
             </p>
           </div>
-          <div className="flex flex-col gap-y-5">
-            <h3 className="text-dune font-medium text-3xl">
+          <div className="flex flex-col font-asap leading-7 gap-y-5">
+            <h3 className="text-dune font-amiko font-medium text-3xl">
               Make easy and cheap repairs
             </h3>
             <p className="font-medium text-iron-gray">
@@ -113,8 +118,8 @@ export default function BlogDetails() {
               as best as they can with some help from you as the seller.
             </p>
           </div>
-          <div className="flex flex-col gap-y-5">
-            <h3 className="text-dune font-medium text-3xl">
+          <div className="flex flex-col font-asap leading-7 gap-y-5">
+            <h3 className="text-dune font-amiko font-medium text-3xl">
               Sell to a professional home buyer!
             </h3>
             <p className="font-medium text-iron-gray">
@@ -137,13 +142,13 @@ export default function BlogDetails() {
           <div className="text-center">
             <button
               type="submit"
-              className="bg-aqua px-7 py-4 text-white uppercase font-semibold rounded-full"
+              className="bg-aqua px-7 py-4 text-white uppercase font-medium font-asap text-xl rounded-full"
             >
               get your fair cash offer
             </button>
           </div>
         </div>
-        <div className="flex items-end flex-col gap-y-7">
+        <aside className="flex items-end flex-col gap-y-7">
           <form action="" className="block w-full">
             <div className="flex flex-nowrap border border-inp w-full">
               <input
@@ -155,27 +160,27 @@ export default function BlogDetails() {
               <input
                 type="submit"
                 value="Search"
-                className="bg-aqua text-sm text-white py-2 px-5 cursor-pointer"
+                className="bg-aqua text-sm font-sans text-white py-2 px-5 cursor-pointer"
               />
             </div>
           </form>
           <div className="bg-aqua px-5 py-4 flex flex-col gap-y-10 text-white w-full">
-            <h4 className="text-center text-white capitalize font-bold text-2xl">
+            <h4 className="text-center font-sans text-white capitalize font-bold text-xl">
               Recent Blog Post
             </h4>
-            <div className="flex items-center gap-x-4">
+            <div className="flex font-amiko font-medium items-center gap-x-4">
               <Image src={img.src} alt="" width={90} height={50} />
               <h4 className="text-white font-medium">
                 Can I Sell my Salem Home without Any Equity?
               </h4>
             </div>
-            <div className="flex items-center gap-x-4">
+            <div className="flex font-amiko font-medium items-center gap-x-4">
               <Image src={img.src} alt="" width={90} height={50} />
               <h4 className="text-white font-medium">
                 Can I Sell my Salem Home without Any Equity?
               </h4>
             </div>
-            <div className="flex items-center gap-x-4">
+            <div className="flex font-amiko font-medium items-center gap-x-4">
               <Image src={img.src} alt="" width={90} height={50} />
               <h4 className="text-white font-medium">
                 Can I Sell my Salem Home without Any Equity?
@@ -184,39 +189,48 @@ export default function BlogDetails() {
           </div>
           <div className="bg-procelain shadow-sm px-5 py-7 w-full">
             <div className="text-center">
-              <h3 className="text-aqua text-2xl font-bold mb-3">
+              <h3 className="text-aqua font-amiko text-2xl font-bold mb-3">
                 Get Your Full Cash Offer
               </h3>
-              <p className="font-semibold text-xl text-black">
+              <p className="font-semibold font-asap text-base text-black">
                 No Hidden Fees. No Agent Commissions.
               </p>
             </div>
-            <form action="" className="w-full flex flex-col gap-y-4 mt-3">
+            <form
+              onSubmit={handleSubmit(onSubmit)}
+              action=""
+              className="w-full flex flex-col font-asap gap-y-4 mt-3"
+            >
               <input
                 className="w-full my-1 p-3 text-liver border border-gray placeholder:capitalize focus:border-space focus:rounded-none focus:text-iridum"
                 type="text"
                 placeholder="full name*"
+                {...register('text', { required: true })}
               />
               <input
                 className="w-full my-1 p-3 text-liver border border-gray placeholder:capitalize focus:border-space focus:rounded-none focus:text-iridum"
                 type="phone"
                 placeholder="phone*"
+                {...register('phone', { required: true })}
               />
               <input
                 className="w-full my-1 p-3 text-liver border border-gray placeholder:capitalize focus:border-space focus:rounded-none focus:text-iridum"
                 type="email"
                 placeholder="email*"
+                {...register('email', { required: true })}
               />
               <textarea
                 className="w-full my-1 p-3 text-liver border border-gray placeholder:capitalize focus:border-space focus:rounded-none focus:text-iridum"
                 placeholder="property adress*"
+                {...register('textarea', { required: true })}
               />
-              <button className="bg-aqua text-white uppercase font-bold text-lg p-4">
+              <button className="bg-aqua flex transition-all gap-x-2 items-center justify-center text-white font-asap uppercase font-bold text-lg p-4">
                 get your full cash offer
+                <MdOutlineArrowForwardIos className="text-lg transition-all" />
               </button>
             </form>
           </div>
-        </div>
+        </aside>
       </div>
     </section>
   );

@@ -26,16 +26,16 @@ const features = [
   },
 ];
 
-export default function Feature() {
+export default function Feature({ show, setShow }) {
   return (
-    <section className="py-10">
+    <section className="py-10 lg:py-28">
       <div className="container px-4">
         {/* section title */}
         <div className="text-center flex flex-col gap-y-5">
-          <h2 className="text-aqua font-bold text-4xl capitalize">
+          <h2 className="text-aqua font-bold text-4xl capitalize font-amiko">
             it&apos;s never been easier to sell your house fast
           </h2>
-          <p className="font-medium text-iron-gray">
+          <p className="font-medium text-iron-gray font-asap">
             Learn how the team at Quality Homes Reimagined, LLC can help you
             sell your house quickly for a fair price without spending a dime on
             repairs, commissions, or inspections.
@@ -46,20 +46,23 @@ export default function Feature() {
           {features &&
             features.map((feature, i) => (
               <div className="flex-1  p-5 py-8 text-center" key={i}>
-                <div className="w-20 h-20 mx-auto rounded-full bg-aqua flex items-center justify-center text-white text-3xl">
+                <div className="w-22 h-22 mx-auto rounded-full bg-aqua flex items-center justify-center text-white text-5xl">
                   {feature.icon}
                 </div>
-                <h2 className=" my-5 font-bold text-lg text-gray-dark">
+                <h2 className=" my-5 font-bold font-amiko text-lg text-gray-dark">
                   {feature.title}
                 </h2>
-                <p className="font-medium text-iron-gray">{feature.desc}</p>
+                <p className="font-medium font-asap text-iron-gray">
+                  {feature.desc}
+                </p>
               </div>
             ))}
         </div>
-        <div className="text-center mt-14">
+        <div className="text-center mt-10">
           <button
+            onClick={() => setShow(!show)}
             type="submit"
-            className="bg-aqua px-7 py-4 text-white uppercase font-semibold rounded-full"
+            className="bg-aqua px-7 py-4 text-xl text-white uppercase font-medium font-asap rounded-full"
           >
             get your fair cash offer
           </button>

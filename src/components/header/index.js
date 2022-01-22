@@ -28,13 +28,13 @@ export default function Header() {
       <header
         ref={headerRef}
         className={`${
-          fixed ? 'fixed bg-white' : 'absolute'
-        } z-50 px-8 py-6 w-full flex items-center mb-48 transition-all`}
+          fixed ? 'bg-white' : ''
+        } fixed z-50 px-8 w-full flex items-center transition-all font-asap`}
       >
-        <div className="flex w-full items-center justify-between">
-          <div className="w-28 cursor-pointer">
+        <div className="flex w-full justify-between">
+          <div className="cursor-pointer w-24 lg:w-52">
             <Link href="/">
-              <a>
+              <a className="w-24">
                 <Image
                   src={logo}
                   className={`w-auto ${fixed ? '' : 'invert-1 brightness-0'} `}
@@ -44,39 +44,62 @@ export default function Header() {
             </Link>
           </div>
 
-          <nav className="hidden md:block flex-1 w-full mr-5">
+          <nav className="hidden xl:block flex-1 w-full mr-5">
             <ul
               className={`${
-                fixed ? 'text-black' : 'text-white'
-              } flex justify-end gap-x-6 font-semibold`}
+                fixed ? 'text-black pt-10' : 'text-white pt-9'
+              } flex justify-end gap-x-6 font-semibold capitalize transition-all`}
             >
-              <li>
+              <li className="border-b-2 py-3 border-transparent hover:border-b-aqua transition-all">
                 <Link href="/">
-                  <a>Home</a>
+                  <a>sell your house</a>
                 </Link>
               </li>
-              <li>
+              <li className="border-b-2 py-3 border-transparent hover:border-b-aqua transition-all">
                 <Link href="/blogs">
-                  <a>Blog</a>
+                  <a>how it works</a>
                 </Link>
               </li>
+              <li className="border-b-2 py-3 border-transparent hover:border-b-aqua transition-all">
+                <Link href="/blogs">
+                  <a>compare</a>
+                </Link>
+              </li>
+              <li className="border-b-2 py-3 border-transparent hover:border-b-aqua transition-all">
+                <Link href="/blogs">
+                  <a>about us</a>
+                </Link>
+              </li>
+              <li className="border-b-2 py-3 border-transparent hover:border-b-aqua transition-all">
+                <Link href="/blogs">
+                  <a>services</a>
+                </Link>
+              </li>
+              <li className="border-b-2 py-3 border-transparent hover:border-b-aqua transition-all">
+                <Link href="/blogs">
+                  <a>blog</a>
+                </Link>
+              </li>
+              <li className="border-b-2 py-3 border-transparent hover:border-b-aqua transition-all">
+                <Link href="/blogs">
+                  <a>contact us</a>
+                </Link>
+              </li>
+              <Link href="tel:(503) 610-8828">
+                <a className="flex items-center hover:underline font-asap flex-nowrap bg-aqua text-white font-semibold rounded-full px-5 py-3 cursor-pointer">
+                  <GiRotaryPhone />
+                  (503) 610-8828
+                </a>
+              </Link>
             </ul>
           </nav>
-
-          <div className="flex items-center gap-x-4">
-            <button className="flex items-center flex-nowrap bg-aqua text-white font-medium rounded-full px-5 py-3 cursor-pointer">
-              <GiRotaryPhone />
-              (503) 610-8828
-            </button>
-
-            <div
-              className={`flex-1 flex justify-end ${
-                fixed ? 'text-black' : 'text-white'
-              } cursor-pointer text-2xl md:hidden`}
-              onClick={() => setToggle(!toggle)}
-            >
-              <FaBars />
-            </div>
+          <div
+            className={`flex-1 pt-3 lg:pt-10 flex justify-end ${
+              fixed ? 'text-black' : 'text-aqua'
+            } cursor-pointer text-2xl xl:hidden`}
+            onClick={() => setToggle(!toggle)}
+          >
+            <FaBars />
           </div>
         </div>
       </header>
@@ -88,19 +111,50 @@ export default function Header() {
       >
         <div className="bg-white w-4/5 h-full absolute right-0 flex flex-col items-center justify-center">
           <ul
-            className="font-bold flex flex-col gap-y-5"
+            className="font-bold flex flex-col gap-y-5 capitalize text-center"
             onClick={() => setToggle(!toggle)}
           >
-            <li>
+            <li className="border-b-2 py-3 border-transparent hover:border-b-aqua transition-all">
               <Link href="/">
-                <a>Home</a>
+                <a>sell your house</a>
               </Link>
             </li>
-            <li>
+            <li className="border-b-2 py-3 border-transparent hover:border-b-aqua transition-all">
               <Link href="/blogs">
-                <a>Blog</a>
+                <a>how it works</a>
               </Link>
             </li>
+            <li className="border-b-2 py-3 border-transparent hover:border-b-aqua transition-all">
+              <Link href="/blogs">
+                <a>compare</a>
+              </Link>
+            </li>
+            <li className="border-b-2 py-3 border-transparent hover:border-b-aqua transition-all">
+              <Link href="/blogs">
+                <a>about us</a>
+              </Link>
+            </li>
+            <li className="border-b-2 py-3 border-transparent hover:border-b-aqua transition-all">
+              <Link href="/blogs">
+                <a>services</a>
+              </Link>
+            </li>
+            <li className="border-b-2 py-3 border-transparent hover:border-b-aqua transition-all">
+              <Link href="/blogs">
+                <a>blog</a>
+              </Link>
+            </li>
+            <li className="border-b-2 py-3 border-transparent hover:border-b-aqua transition-all">
+              <Link href="/blogs">
+                <a>contact us</a>
+              </Link>
+            </li>
+            <Link href="tel:(503) 610-8828">
+              <a className="flex items-center hover:underline flex-nowrap bg-aqua text-white font-medium rounded-full px-5 py-3 cursor-pointer">
+                <GiRotaryPhone />
+                (503) 610-8828
+              </a>
+            </Link>
           </ul>
         </div>
         {/* close menu */}
