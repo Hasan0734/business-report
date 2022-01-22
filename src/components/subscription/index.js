@@ -8,7 +8,7 @@ export default function Subcription({ show, setShow }) {
         background: ` linear-gradient(180deg,rgba(38,38,38,0.45) 0%,rgba(38,38,38,0.63) 100%), url(${bg.src}) left/cover no-repeat`,
       }}
     >
-      <div className="container px-4 flex flex-col md:flex-row gap-y-6 md:gap-y-0 md:gap-x-7">
+      <div className="container px-4 flex flex-col md:flex-row md:items-center gap-y-6 md:gap-y-0 md:gap-x-7">
         <div className="flex-1 text-white">
           <h2 className="font-bold font-amiko text-white text-2xl md:text-4xl mb-3">
             What’s Your Home Worth?
