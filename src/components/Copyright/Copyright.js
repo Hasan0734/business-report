@@ -1,4 +1,5 @@
 import Layout from "../layout";
+import NotFound from "../NotFound/NotFound";
 import SearchMenu from "../SearchMenu/SearchMenu";
 
 
@@ -10,7 +11,7 @@ const Copyright = () => {
                 <div className="lg:col-span-4 col-span-1">
                     <SearchMenu data={{title: 'My Copyright'}}/>
                     <div className="">
-                        <h1>Hello this is not found</h1>
+                       <NotFound/>
                     </div>
                 </div>
             </Layout>
