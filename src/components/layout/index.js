@@ -1,11 +1,14 @@
-import { Footer, Header } from '..';
+import { Header } from '..';
 
 export default function Layout({ children }) {
   return (
     <>
       <Header />
-      <main>{children}</main>
-      <Footer />
+      <div className='container px-4'>
+        
+      </div>
+      <main className='container px-4 '>{children}</main>
+      {/* <Footer /> */}
     </>
   );
 }

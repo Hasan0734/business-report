@@ -7,7 +7,10 @@ module.exports = {
   theme: {
     extend: {
       fontSize: {
+        'xs': ['15px', '15px'],
+        'sm': ['12px', '12px'],
         'base-2': ['18px', '18px'],
+        'lg': ['15px', '15px'],
         '2xl': ['25px', '30px'],
         '4xl': ['35px', '42px'],
         '5xl': ['44px', '44px'],
@@ -29,13 +32,12 @@ module.exports = {
     invert: {
       1: '1',
     },
-    // screens: {
-    //   xl: '1280px',
-    // },
     colors: {
+      orange: '#ad824a',
       transparent: 'transparent',
       white: '#fff',
       black: '#000',
+      red: '#ff0000',
       procelain: '#f2f2f2',
       aqua: '#008081',
       liver: '#4e4e4e',
@@ -53,12 +55,10 @@ module.exports = {
       iron: '#d8d8d8',
       cross: 'rgba( 49, 91, 124, 1.00 )',
     },
-    fontFamily: {
-      amiko: ['Amiko', 'sans-serif'],
-      asap: ['Asap', 'sans-serif'],
-      sans: ['Open sans', 'sans-serif'],
-      roboto: ['Roboto', 'sans-serif'],
-    },
+    // screens: {
+    //   xl: '1280px',
+    // },
+
 
     boxShadow: {
       sm: '0px 2px 18px 0px rgb(0 0 0 / 30%)',
