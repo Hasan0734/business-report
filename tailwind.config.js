@@ -3,6 +3,7 @@ module.exports = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx}',
     './src/components/**/*.{js,ts,jsx,tsx}',
+
   ],
   theme: {
     extend: {
@@ -11,6 +12,7 @@ module.exports = {
         'sm': ['12px', '12px'],
         'base-2': ['18px', '18px'],
         'lg': ['15px', '15px'],
+        'xl': ['20px'],
         '2xl': ['25px', '30px'],
         '4xl': ['35px', '42px'],
         '5xl': ['44px', '44px'],
@@ -74,5 +76,7 @@ module.exports = {
     //   },
     // },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar-hide')
+  ],
 };

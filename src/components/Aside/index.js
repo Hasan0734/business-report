@@ -5,44 +5,44 @@ export default function Aside() {
         <>
 
 
-            <div className="flex sm:flex-row lg:flex-col sm:gap-2 justify-center mt-0 sm:mt-12">
+            <div className="flex flex-wrap lg:flex-col sm:gap-2 justify-center items-center mt-0 sm:mt-12">
 
-                <div className="my-10 p-2  active:bg-white-smoke rounded">
+                <div className="my-10 mx-4 ">
                     <Link href='/'>
-                        <a className="hover:text-orange text-center">
-                            <div >
+                        <a className="">
+                            <div className=" rounded hover:text-orange text-center">
                                 <span className="text-orange"><i class="fas fa-search"></i></span>
-                                <h3>Dashboard</h3>
+                                <h3 className="font-semibold">Dashboard</h3>
                             </div>
                         </a>
                     </Link>
                 </div>
-                <div className="my-10 p-1 active:bg-white-smoke rounded">
-                    <Link href='/'>
-                        <a className="hover:text-orange text-center">
-                            <div >
+                <div className="my-10 mx-4 ">
+                    <Link href='/business-services'>
+                        <a className="">
+                            <div className=" rounded hover:text-orange text-center">
                                 <span className="text-orange"><i class="fas fa-search"></i></span>
-                                <h3>Business Services</h3>
+                                <h3 className="font-semibold">Business Services</h3>
                             </div>
                         </a>
                     </Link>
                 </div>
-                <div className="my-10 p-1 active:bg-white-smoke rounded">
-                    <Link href='/'>
-                        <a className="hover:text-orange text-center">
-                            <div >
+                <div className="my-10 mx-4">
+                    <Link href='/interlectual-property-services'>
+                        <a className="">
+                            <div className="rounded hover:text-orange text-center">
                                 <span className="text-orange"><i class="fas fa-search"></i></span>
-                                <h3>Interlectual Property Services</h3>
+                                <h3 className="font-semibold">Interlectual Property Services</h3>
                             </div>
                         </a>
                     </Link>
                 </div>
-                <div className="my-10 p-1 ">
+                <div className="my-10 mx-4">
                     <Link href='/'>
-                        <a className="hover:text-orange text-center">
-                            <div >
+                        <a className=" ">
+                            <div class=" rounded hover:text-orange text-center" >
                                 <span className="text-orange"><i class="fas fa-search"></i></span>
-                                <h3>Copyright Services</h3>
+                                <h3 className="font-semibold">Copyright Services</h3>
                             </div>
                         </a>
                     </Link>
