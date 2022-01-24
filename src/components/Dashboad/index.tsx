@@ -47,7 +47,7 @@ export default function Dashboard() {
                             <Card title={"Name Clearence"} payment={false} status={'Completed and Archived'}></Card>
 
                         </div>
-                        <div className="text-end">
+                        <div className="text-right text-blue">
                             <Link href="/">
                                 <a className="">Load more...</a>
                             </Link>

@@ -5,7 +5,10 @@ const Card2 = ({ data }) => {
         <>
             <div className="border border-gray p-2 pr-3">
                 <div className="flex gap-3 items-center">
-                    <div className="text-orange text-xl"><i className="far fa-folder"></i></div>
+                    <div className="text-orange text-xl">
+                        
+                             {data.icon}               
+                        </div>
                     <p className=" text-xl font-semibold ">{data.name}</p>
                 </div>
                 <p className="text-xs font-semibold py-3">{data.title}</p>

@@ -1,7 +1,8 @@
+import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useState } from 'react';
-
+import Logo from '../../assets/icons/logo.jpeg';
 export default function Header() {
   const [business, setBusiness] = useState(false)
   const [interlectual, setInterlectual] = useState(false)
@@ -17,10 +18,16 @@ export default function Header() {
         <div className="border border-iron ">
           <div className="container mx-auto ">
 
-            {routeCheck && <nav className="flex  justify-between  py-4 px-4 ">
+            {routeCheck && <nav className="flex  justify-between items-start  sm:items-center  py-2 px-4 ">
               {/* small devices */}
               <div>
-                <h3 className="text-lg font-semibold">My Cases</h3>
+              <Link href='/'>
+              <a>
+              <div className="w-16">
+                  <Image src={Logo} />
+                </div>
+              </a>
+              </Link>
                 {menuToggle && <ul className="flex mt-7 md:hidden flex-col gap-3">
                   <li>
                     <Link href='/my-cases'>
@@ -45,10 +52,10 @@ export default function Header() {
                 </ul>}
               </div>
 
-          {/* small devices end */}
-          {/* lg devies */}
+              {/* small devices end */}
+              {/* lg devies */}
               <div>
-                <ul className={`md:flex hidden gap-4 justify-end items-center`}>
+                <ul className={`md:flex hidden gap-4 justify-end items-start sm:items-center `}>
                   <li>
                     <Link href='/my-cases'>
                       <a className="font-semibold p-1 hover:underline hover:text-orange" >My Cases</a>
@@ -71,8 +78,12 @@ export default function Header() {
                   </li>
 
                 </ul>
-                <button className="block md:hidden">
-                  <i onClick={() => setMenuToggle(!menuToggle)} className="fas fa-bars"></i>
+                <button className="block md:hidden mt-4 sm:mt-0">
+                  
+                    <span onClick={() => setMenuToggle(!menuToggle)}>
+                   
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 5v2h-4V5h4M9 5v6H5V5h4m10 8v6h-4v-6h4M9 17v2H5v-2h4M21 3h-8v6h8V3zM11 3H3v10h8V3zm10 8h-8v10h8V11zm-10 4H3v6h8v-6z"/></svg>
+                    </span>
                 </button>
               </div>
               {/* lg devices end */}
@@ -80,15 +91,17 @@ export default function Header() {
 
 
 
-        {/* business service dropdown btn */}
+            {/* business service dropdown btn */}
 
             {pathname == '/business-services' && <div >
               <nav className="flex justify-between items-center py-4 px-4">
-                <div>
-                  <h5>
-                    My Cases
-                  </h5>
+              <Link href='/'>
+              <a>
+              <div className="w-16">
+                  <Image src={Logo} />
                 </div>
+              </a>
+              </Link>
                 <div>
                   <button onClick={() => setBusiness(!business)} className="flex items-center gap-x-2 font-medium ">Business Services
 
@@ -100,9 +113,9 @@ export default function Header() {
                 </div>
               </nav>
             </div>}
-{/* business service dropdown btn end */}
-        {/* business dropdown menu */}
-          <div className="flex justify-end">
+            {/* business service dropdown btn end */}
+            {/* business dropdown menu */}
+            <div className="flex justify-end">
               <div className={`${business ? 'block' : 'hidden'} absolute border border-gray z-10 w-44 text-base list-none bg-white rounded divide-y`}>
                 <ul className="p-1 ">
                   <li>
@@ -118,17 +131,19 @@ export default function Header() {
 
               </div>
             </div>
-      {/* business dropdown menu end */}
+            {/* business dropdown menu end */}
 
-      {/* intelectula dropdown btn */}
+            {/* intelectula dropdown btn */}
 
             {pathname == '/interlectual-property-services' && <div >
               <nav className="flex justify-between items-center py-4 px-4">
-                <div>
-                  <h5>
-                    My Cases
-                  </h5>
+              <Link href='/'>
+              <a>
+              <div className="w-16">
+                  <Image src={Logo} />
                 </div>
+              </a>
+              </Link>
                 <div>
                   <button onClick={() => setInterlectual(!interlectual)} className="flex items-center gap-x-2 font-medium ">
                     Interlectual Property Services
