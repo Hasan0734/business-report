@@ -38,7 +38,7 @@ export default function Aside() {
                     </Link>
                 </div>
                 <div className="my-10 mx-4">
-                    <Link href='/'>
+                    <Link href='/copyright'>
                         <a className=" ">
                             <div class=" rounded hover:text-orange text-center" >
                                 <span className="text-orange"><i class="fas fa-search"></i></span>

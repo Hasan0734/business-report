@@ -1,4 +1,6 @@
 const Card2 = ({ data }) => {
+
+    
     return (
         <>
             <div className="border border-gray p-2 pr-3">
