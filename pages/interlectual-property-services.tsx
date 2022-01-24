@@ -1,9 +1,10 @@
+import { NextPage } from 'next'
 import InterlectualServices from '../src/components/InterlectualServices/InterlectualServices'
 
-const index = () => {
+const index: NextPage = () => {
     return (
         <>
-            <InterlectualServices/>
+            <InterlectualServices />
         </>
     )
 }

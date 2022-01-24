@@ -1,7 +1,8 @@
+import { NextPage } from 'next'
 import { useState } from 'react';
 import Dashboard from '../src/components/Dashboad';
 
-export default function Home() {
+const Home: NextPage = () => {
   const [show, setShow] = useState(false);
 
   return (
@@ -10,3 +11,5 @@ export default function Home() {
     </>
   );
 }
+
+export default Home

@@ -1,10 +1,11 @@
+import { NextPage } from 'next'
 import Copyright from "../src/components/Copyright/Copyright";
 
 
-const index = () => {
+const index: NextPage = () => {
     return (
         <>
-            <Copyright/>
+            <Copyright />
         </>
     );
 };

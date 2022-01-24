@@ -54,21 +54,21 @@ const CaseDocuments = () => {
                                 <i className="far fa-list-alt text-orange"></i>
                                 <h4 className="">Name Clearance Letter</h4>
                             </div>
-                            <button className="text-xl font-semibold text-orange"><i class="fas fa-print"></i></button>
+                            <button className="text-xl font-semibold text-orange"><i className="fas fa-print"></i></button>
                         </div>
                         <div className="mt-3 border border-gray px-2 py-3 flex justify-between">
                             <div className="flex gap-2 text-xl font-semibold items-center">
                                 <i className="far fa-list-alt text-orange"></i>
                                 <h4 className="">Name Clearance Letter</h4>
                             </div>
-                            <button className="text-xl font-semibold text-orange"><i class="fas fa-print"></i></button>
+                            <button className="text-xl font-semibold text-orange"><i className="fas fa-print"></i></button>
                         </div>
                         <div className="mt-3 border border-gray px-2 py-3 flex justify-between">
                             <div className="flex gap-2 text-xl font-semibold items-center">
                                 <i className="far fa-list-alt text-orange"></i>
                                 <h4 className="">Name Clearance Letter</h4>
                             </div>
-                            <button className="text-xl font-semibold text-orange"><i class="fas fa-print"></i></button>
+                            <button className="text-xl font-semibold text-orange"><i className="fas fa-print"></i></button>
                         </div>
                         <div className="flex justify-end mt-3">
                             <button className="bg-orange text-white py-1 px-3 rounded-md">Resubmit case</button>

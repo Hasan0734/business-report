@@ -5,10 +5,10 @@ export default function Card({ status, title, payment }) {
     const [openModal, setOpenModal] = useState(false)
     return (
         <>
-          {openModal && <CaseDocuments/>}
+            {openModal && <CaseDocuments />}
             <div onClick={() => setOpenModal(!openModal)} className="border cursor-pointer border-gray p-2">
                 <div className="flex gap-3">
-                    <div className="text-orange text-xl"><i class="far fa-folder"></i></div>
+                    <div className="text-orange text-xl"><i className="far fa-folder"></i></div>
                     <div>
                         <p className=" text font-semibold ">{title}</p>
                         <p className={`${payment && 'text-red'} text-lg`}>{status}</p>

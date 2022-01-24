@@ -1,9 +1,10 @@
+import { NextPage } from 'next'
 import IntellectualProperty from "../src/components/IntellectualProperty/IntellectualProperty";
 
-const idnex = () => {
+const idnex: NextPage = () => {
     return (
         <>
-            <IntellectualProperty/>
+            <IntellectualProperty />
         </>
     );
 };
